@@ -24,13 +24,26 @@
 // Research:
 // How to generate a random number in JavaScript?
 //------------------------------------------------------------------------------------------
+
 //if choose wrong destination, should be able to rechoose 
 //"your going to do this, that, and this"
 //"Is this complete? Should be able to say yes"
 //one function for destination
 //one for restaurants and so on
-let destinations = ["New York", "California", "Cincinnati", "Dallas"];
-let restaurants = [""]
+
+
+
+let destinations = ["New York", "Hawaii", "Tennessee", "Ohio"];
+
+function random_destination(destinations)
+{
+  
+return destinations[Math.floor(Math.random()*destinations.length)];
+     
+}
+console.log(random_destination(destinations));
+
+
 
 
 
