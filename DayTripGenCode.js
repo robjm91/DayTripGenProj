@@ -27,41 +27,44 @@
 
 
 //Random Destinations Generator
-let destinations = ["the beach.", "a hiking trail.", "a archery range", "downtown"]; //created array called destinations
+let destinations = ["the beach.", "a hiking trail.", "a archery range.", "downtown."]; //created array called destinations
 
 
 function random_destination(destinations) {
-    
+
     return destinations[Math.floor(Math.random()*destinations.length)];   
 }
 console.log("You will first visit ");
 console.log(random_destination(destinations));
 
 //Random Restaurants Generator
-let restaurants = ["The Crab Bucket", "Second Street Noodles", "Arnold's Pizza Shop", "Southern BBQ House"];
+let restaurants = ["The Crab Bucket.", "Second Street Noodles.", "Arnold's Pizza Shop.", "Southern BBQ House."];
 
 function random_restaurant(restaurants) {
   
     return restaurants[Math.floor(Math.random()*restaurants.length)];   
 }
+console.log("Then have lunch at  ");
 console.log(random_restaurant(restaurants));
 
 //Random Mode of Transportation Generator
-let transportation = ["Personal Car", "Boat", "Walk", "Uber"];
+let transportation = ["personal car.", "boat.", "walking.", "Uber or Lyft."];
 
 function random_transportation(transportation) {
   
     return transportation[Math.floor(Math.random()*transportation.length)];   
 }
+console.log("Would be best to travel by ");
 console.log(random_transportation(transportation));
 
 //Random Form of Entertainment Generator
-let entertainment = ["Watch a Comedy Show", "Go Sight See", "Prank Innocent Bystander's", "Hit the bar!"];
+let entertainment = ["watch a comedy show.", "jump in the hotel jacuzzi.", "prank an innocent bystander.", "hit the bar!"];
 
 function random_entertainment(entertainment) {
   
     return entertainment[Math.floor(Math.random()*entertainment.length)];   
 }
+console.log("To end the day you will ");
 console.log(random_entertainment(entertainment));
 
 
@@ -72,7 +75,7 @@ if(userAnswer === "yes") {
     console.log("Woot woot!");
 }
 else {
-    console.log("Sorry :( . Hit refresh!");
+    console.log("Sorry :( . Hit the refresh button!");
 }
 
 
