@@ -35,6 +35,7 @@
 //Random Destinations Generator
 let destinations = ["The Beach", "Hiking", "Archery Range", "Downtown"]; //created array called destinations
 
+
 function random_destination(destinations) {//created function called random_destination that takes destinations as parameter
   
     return destinations[Math.floor(Math.random()*destinations.length)];   
@@ -67,6 +68,21 @@ function random_entertainment(entertainment) {
     return entertainment[Math.floor(Math.random()*entertainment.length)];   
 }
 console.log(random_entertainment(entertainment));
+
+function random_trip_planner(options) { //Possible Options function that condenses code, the "options"
+                                        //parameter is just a place holder for other created arrays.
+  
+    return options[Math.floor(Math.random()*options.length)];   
+}
+
+console.log(random_trip_planner(entertainment));
+console.log(random_trip_planner(transportation));
+//As a user, I want to be able to randomly re-select a destination, restaurant, mode of
+// transportation, and/or form of entertainment if I don’t like one or more of those things.
+
+//Create if statement that tells "are you good with your trip plans?" and if so completed. If not then 
+//re-cycle the generator.
+//remember Minimum Viable Product
 
 
 
