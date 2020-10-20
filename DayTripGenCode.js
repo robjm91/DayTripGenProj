@@ -16,8 +16,8 @@
 // (15 points): As a user, I want to be able to randomly re-select a destination, restaurant, mode of
 // transportation, and/or form of entertainment if I don’t like one or more of those things.  ***DONE
 // (10 points): As a user, I want to be able to confirm that my day trip is “complete” once I like all of the
-// random selections.
-// (10 points): As a user, I want to display my completed trip in the console.
+// random selections. ***DONE
+// (10 points): As a user, I want to display my completed trip in the console. ***DONE
 // (5 points): As a developer, I want all of my functions to have a Single Responsibility. Remember, each
 // function should do just one thing!
 
@@ -27,13 +27,14 @@
 
 
 //Random Destinations Generator
-let destinations = ["The Beach", "Hiking", "Archery Range", "Downtown"]; //created array called destinations
+let destinations = ["the beach.", "a hiking trail.", "a archery range", "downtown"]; //created array called destinations
 
 
-function random_destination(destinations) {//created function called random_destination that takes destinations as parameter
-  
+function random_destination(destinations) {
+    
     return destinations[Math.floor(Math.random()*destinations.length)];   
 }
+console.log("You will first visit ");
 console.log(random_destination(destinations));
 
 //Random Restaurants Generator
@@ -75,7 +76,6 @@ else {
 }
 
 
-
 // function random_trip_planner(options) {   //Possible Options function that condenses code, the "options"
 //                                           //parameter is just a place holder for other created arrays.
   
@@ -84,19 +84,3 @@ else {
 
 // console.log(random_trip_planner(entertainment));
 // console.log(random_trip_planner(transportation));
-
-
-//Create if statement that tells "are you good with your trip plans?" and if so completed. If not then 
-//re-cycle the generator.
-//remember Minimum Viable Product
-
-
-
-
-
-
-
-
-
-
-
