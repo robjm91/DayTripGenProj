@@ -72,7 +72,7 @@ let userAcknowledgment= prompt("Are these plans acceptable?");
 let userAnswer = userAcknowledgment.toLowerCase("");
 
 if(userAnswer === "yes") {
-    console.log("Woot woot!");
+    console.log("Woot woot! Here is your completed trip details!");
 }
 else {
     console.log("Sorry :( . Hit the refresh button!");
