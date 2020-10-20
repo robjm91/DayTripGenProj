@@ -14,7 +14,7 @@
 // (5 points): As a user, I want a mode of transportation to be randomly selected for my day trip. ***DONE
 // (5 points): As a user, I want a form of entertainment to be randomly selected for my day trip. ***DONE
 // (15 points): As a user, I want to be able to randomly re-select a destination, restaurant, mode of
-// transportation, and/or form of entertainment if I don’t like one or more of those things.
+// transportation, and/or form of entertainment if I don’t like one or more of those things.  ***DONE
 // (10 points): As a user, I want to be able to confirm that my day trip is “complete” once I like all of the
 // random selections.
 // (10 points): As a user, I want to display my completed trip in the console.
@@ -63,10 +63,15 @@ function random_entertainment(entertainment) {
 }
 console.log(random_entertainment(entertainment));
 
-let userAcknowledgment= prompt("Are these plans acceptable?")
 
-if(userAcknowledgment === "yes") {
+let userAcknowledgment= prompt("Are these plans acceptable?");
+let userAnswer = userAcknowledgment.toLowerCase("");
+
+if(userAnswer === "yes") {
     console.log("Woot woot!");
+}
+else {
+    console.log("Sorry :( . Hit refresh!");
 }
 
 
