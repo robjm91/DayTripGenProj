@@ -8,9 +8,9 @@
 // Technologies: JavaScript, HTML, CSS, Bootstrap
 
 // Features:
-// (5 points): As a developer, I want to make good, consistent commits.                  DONE
-// (5 points): As a user, I want a destination to be randomly selected for my day trip.   DONE
-// (5 points): As a user, I want a restaurant to be randomly selected for my day trip.
+// (5 points): As a developer, I want to make good, consistent commits.                  ***DONE
+// (5 points): As a user, I want a destination to be randomly selected for my day trip.   ***DONE
+// (5 points): As a user, I want a restaurant to be randomly selected for my day trip.     ***DONE
 // (5 points): As a user, I want a mode of transportation to be randomly selected for my day trip.
 // (5 points): As a user, I want a form of entertainment to be randomly selected for my day trip.
 // (15 points): As a user, I want to be able to randomly re-select a destination, restaurant, mode of
@@ -49,6 +49,16 @@ function random_restaurant(restaurants) {
     return restaurants[Math.floor(Math.random()*restaurants.length)];   
 }
 console.log(random_restaurant(restaurants));
+
+//Random Mode of Transportation Generator
+let transportation = ["Personal Car", "Boat", "Walk", "Uber"];
+
+function random_transportation(transportation) {
+  
+    return transportation[Math.floor(Math.random()*transportation.length)];   
+}
+console.log(random_transportation(transportation));
+
 
 
 
