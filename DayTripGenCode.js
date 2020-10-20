@@ -25,12 +25,6 @@
 // How to generate a random number in JavaScript?
 //------------------------------------------------------------------------------------------
 
-//if choose wrong destination, should be able to rechoose 
-//"your going to do this, that, and this"
-//"Is this complete? Should be able to say yes"
-//one function for destination
-//one for restaurants and so on
-
 
 //Random Destinations Generator
 let destinations = ["The Beach", "Hiking", "Archery Range", "Downtown"]; //created array called destinations
@@ -69,20 +63,30 @@ function random_entertainment(entertainment) {
 }
 console.log(random_entertainment(entertainment));
 
-function random_trip_planner(options) { //Possible Options function that condenses code, the "options"
-                                        //parameter is just a place holder for other created arrays.
-  
-    return options[Math.floor(Math.random()*options.length)];   
+let userAcknowledgment= prompt("Are these plans acceptable?")
+
+if(userAcknowledgment === "yes") {
+    console.log("Woot woot!");
 }
 
-console.log(random_trip_planner(entertainment));
-console.log(random_trip_planner(transportation));
-//As a user, I want to be able to randomly re-select a destination, restaurant, mode of
-// transportation, and/or form of entertainment if I don’t like one or more of those things.
+
+
+// function random_trip_planner(options) {   //Possible Options function that condenses code, the "options"
+//                                           //parameter is just a place holder for other created arrays.
+  
+//     return options[Math.floor(Math.random()*options.length)];   
+// }
+
+// console.log(random_trip_planner(entertainment));
+// console.log(random_trip_planner(transportation));
+
 
 //Create if statement that tells "are you good with your trip plans?" and if so completed. If not then 
 //re-cycle the generator.
 //remember Minimum Viable Product
+
+
+
 
 
 
