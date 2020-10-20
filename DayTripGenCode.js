@@ -8,8 +8,8 @@
 // Technologies: JavaScript, HTML, CSS, Bootstrap
 
 // Features:
-// (5 points): As a developer, I want to make good, consistent commits.
-// (5 points): As a user, I want a destination to be randomly selected for my day trip.
+// (5 points): As a developer, I want to make good, consistent commits.                  DONE
+// (5 points): As a user, I want a destination to be randomly selected for my day trip.   DONE
 // (5 points): As a user, I want a restaurant to be randomly selected for my day trip.
 // (5 points): As a user, I want a mode of transportation to be randomly selected for my day trip.
 // (5 points): As a user, I want a form of entertainment to be randomly selected for my day trip.
@@ -32,16 +32,23 @@
 //one for restaurants and so on
 
 
+//Random Destinations Generator
+let destinations = ["The Beach", "Hiking", "Archery Range", "Downtown"]; //created array called destinations
 
-let destinations = ["New York", "Hawaii", "Tennessee", "Ohio"];
-
-function random_destination(destinations)
-{
+function random_destination(destinations) {//created function called random_destination that takes destinations as parameter
   
-return destinations[Math.floor(Math.random()*destinations.length)];
-     
+    return destinations[Math.floor(Math.random()*destinations.length)];   
 }
 console.log(random_destination(destinations));
+
+//Random Restaurants Generator
+let restaurants = ["The Crab Bucket", "Second Street Noodles", "Arnold's Pizza Shop", "Southern BBQ House"];
+
+function random_restaurant(restaurants) {
+  
+    return restaurants[Math.floor(Math.random()*restaurants.length)];   
+}
+console.log(random_restaurant(restaurants));
 
 
 
