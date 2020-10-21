@@ -27,8 +27,9 @@
 
 
 //Random Destinations Generator
-let destinations = ["the beach.", "a hiking trail.", "a archery range.", "downtown."]; //created array called destinations
+ 
 
+let destinations = ["the beach.", "a hiking trail.", "a archery range.", "downtown."];
 
 function random_destination(destinations) {
 
@@ -36,6 +37,7 @@ function random_destination(destinations) {
 }
 console.log("You will first visit ");
 console.log(random_destination(destinations));
+
 
 //Random Restaurants Generator
 let restaurants = ["The Crab Bucket.", "Second Street Noodles.", "Arnold's Pizza Shop.", "Southern BBQ House."];
@@ -46,6 +48,7 @@ function random_restaurant(restaurants) {
 }
 console.log("Then have lunch at  ");
 console.log(random_restaurant(restaurants));
+
 
 //Random Mode of Transportation Generator
 let transportation = ["personal car.", "boat.", "walking.", "Uber or Lyft."];
