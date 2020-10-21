@@ -29,81 +29,56 @@
 //Random Destinations Generator
  
 
-// let destinations = ["the beach.", "a hiking trail.", "a archery range.", "downtown."];
+let destinations = ["the beach.", "a hiking trail.", "a archery range.", "downtown."];
 
-// function random_destination(destinations) {
+function random_destination(destinations) {
 
-//     return destinations[Math.floor(Math.random()*destinations.length)];   
-// }
-// console.log("You will first visit ");
-// console.log(random_destination(destinations));
-
-
-// //Random Restaurants Generator
-// let restaurants = ["The Crab Bucket.", "Second Street Noodles.", "Arnold's Pizza Shop.", "Southern BBQ House."];
-
-// function random_restaurant(restaurants) {
-  
-//     return restaurants[Math.floor(Math.random()*restaurants.length)];   
-// }
-// console.log("Then have lunch at  ");
-// console.log(random_restaurant(restaurants));
+    return destinations[Math.floor(Math.random()*destinations.length)];   
+}
+console.log("You will first visit ");
+console.log(random_destination(destinations));
 
 
-// //Random Mode of Transportation Generator
-// let transportation = ["personal car.", "boat.", "walking.", "Uber or Lyft."];
-
-// function random_transportation(transportation) {
-  
-//     return transportation[Math.floor(Math.random()*transportation.length)];   
-// }
-// console.log("Would be best to travel by ");
-// console.log(random_transportation(transportation));
-
-// //Random Form of Entertainment Generator
-// let entertainment = ["watch a comedy show.", "jump in the hotel jacuzzi.", "prank an innocent bystander.", "hit the bar!"];
-
-// function random_entertainment(entertainment) {
-  
-//     return entertainment[Math.floor(Math.random()*entertainment.length)];   
-// }
-// console.log("To end the day you will ");
-// console.log(random_entertainment(entertainment));
-
-
-// let userAcknowledgment= prompt("Are these plans acceptable?");
-// let userAnswer = userAcknowledgment.toLowerCase("");
-
-// if(userAnswer === "yes") {
-//     console.log("Woot woot! Here is your completed trip details!");
-// }
-// else {
-//     console.log("Sorry :( . Hit the refresh button!");
-// }
-
-let destinations = ["the beach.", "a hiking trail.", "the forest.", "downtown."];
+//Random Restaurants Generator
 let restaurants = ["The Crab Bucket.", "Second Street Noodles.", "Arnold's Pizza Shop.", "Southern BBQ House."];
+
+function random_restaurant(restaurants) {
+  
+    return restaurants[Math.floor(Math.random()*restaurants.length)];   
+}
+console.log("Then have lunch at  ");
+console.log(random_restaurant(restaurants));
+
+
+//Random Mode of Transportation Generator
 let transportation = ["personal car.", "boat.", "walking.", "Uber or Lyft."];
+
+function random_transportation(transportation) {
+  
+    return transportation[Math.floor(Math.random()*transportation.length)];   
+}
+console.log("Would be best to travel by ");
+console.log(random_transportation(transportation));
+
+//Random Form of Entertainment Generator
 let entertainment = ["watch a comedy show.", "jump in the hotel jacuzzi.", "prank an innocent bystander.", "hit the bar!"];
 
-
-//pulls random element from called array
-function random_trip_planner(options) {   
-
-    return options[Math.floor(Math.random()*options.length)];   
+function random_entertainment(entertainment) {
+  
+    return entertainment[Math.floor(Math.random()*entertainment.length)];   
 }
-console.log(random_trip_planner(destinations));
+console.log("To end the day you will ");
+console.log(random_entertainment(entertainment));
 
-//What Destination
-let firstQuestion = prompt("Are you happy with your picked destination? ");
-if (firstQuestion === "yes") {
 
-    console.log("Cool!");
+let userAcknowledgment= prompt("Are these plans acceptable?");
+let userAnswer = userAcknowledgment.toLowerCase("");
+
+if(userAnswer === "yes") {
+    console.log("Woot woot! Here is your completed trip details!");
 }
-else if (firstQuestion === "no") {
-    let followUpFirst = prompt("How about this destination?");
-    console.log(random_trip_planner(destinations));
-   
+else {
+    console.log("Sorry :( . Hit the refresh button!");
 }
 
 
