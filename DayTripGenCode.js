@@ -95,16 +95,21 @@ function random_trip_planner(options) {
 console.log(random_trip_planner(destinations));
 
 //What Destination
-let destinationQuestion = prompt("Are you happy with your picked destination? ");
-let destinationAnswer = destinationQuestion.toLowerCase;
+let firstQuestion = prompt("Are you happy with your picked destination? ");
+if (firstQuestion === "yes") {
 
-if (destinationAnswer === "yes"){
-    console.log("Great!");
+    console.log("Cool!");
 }
-else {
+else if (firstQuestion === "no") {
+    let followUpFirst = prompt("How about this destination?");
     console.log(random_trip_planner(destinations));
-    console.log()
+   
 }
+
+
+
+
+
 
 
 
